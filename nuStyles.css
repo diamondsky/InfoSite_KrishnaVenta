@@ -1,0 +1,310 @@
+/* Style sheet created by: Kiana Slimak, James Parsons 11.16.17*/
+
+/* Style for body specifies a background color */
+body {
+    background-color: #8db5dd;
+    /*background:#e3eaea;*/
+   }
+
+/* Style to create a fluid image */
+header img {
+    max-width: 69%;
+    display: block;
+    margin: auto;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style for container centers the page and sets the element width*/
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for header specifies top margin, background color, rounded corners, and center-aligns content */
+header {
+}
+
+header ul {
+  font-family: "Perpetua Titling", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, "Times New Roman",serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  margin-top: 0.5em;
+}
+
+header ul li {
+  /*background-color: #909090;*/
+  background-color: #1D1D1C;
+  border-radius: 2em;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+  margin-top:0.3em;
+}
+
+header ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Style for nav specifies text properties */
+/*nav {
+    font-family: Calibri, "Trebuchet MS", sans-serif, "Times New Roman",serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1.5em;
+}*/
+
+/* Styles specifies padding and margins for unordered list */
+/*nav ul {
+    padding: 1em;
+    margin-top: 0.5em;
+}*/
+
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+/*nav li {
+    background-color: #cccccc;
+    background-color: #808080;
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    margin-top:0.3em;
+}*/
+
+/* Style changes navigation link text color to white and removes the underline */
+/*nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+        }*/
+
+/* Style for main specifies a block display, text properties, margins, padding, rounded corners, and border properties */
+main {
+    display: block;
+    font-family: Calibri, 'Trebuchet MS', sans-serif, "Times New Roman",serif;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    padding: 1em;
+    /*border-radius: 2em 2em 2em 2em;*/
+    background-color: #FFFFFF;
+    opacity: 0.85;
+}
+
+
+
+
+/* Style for footer specifies font size, text alignment, and top margin */
+footer {
+    font-size: .70em;
+    text-align: center;
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+/* Style for anchor elements within the footer element */
+footer a {
+    /*color: #FFFFFF;*/
+    text-decoration: none;
+}
+
+
+/* Style for aside element */
+aside {
+	font-style: italic;
+}
+
+/* Style rule for input, select, and textarea form elements */
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/* Style rule for label element */
+label {
+	display: block;
+}
+
+/* Style rule for unordered list within a form */
+form ul {
+	list-style-type: none;
+}
+
+.chkbx {
+	display: inline-block;
+}
+
+.desktop {
+	display: none;
+}
+
+.tablet {
+	display: none;
+}
+
+
+
+/* Styles for tablets */
+@media only screen and (min-width: 660px) {
+  /* Style specifies a horizontal display for navigation links */
+  /*nav li {
+      display: inline;
+      float: left;
+      margin-left: 1%;
+      margin-right: 1%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 2em;
+      width: 18%;
+      white-space: nowrap;
+      border-radius: 0;
+      background-color: #808080;
+      border-radius: 2em;
+  }*/
+
+  header ul li {
+    display: inline;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 2em;
+    width: 18%;
+    white-space: nowrap;
+    border-radius: 0;
+	background: transparent;
+    /*background: #808080;*/
+	/*background: #1D1D1C;*/
+    /*border-radius: 2em;*/
+  }
+
+ header ul li {
+  list-style-type: none;
+  background: transparent;
+}
+
+header li a:link {
+  color: #FFFFFF;
+}
+
+header li a:visited {
+  color: #FFFFFF;
+}
+
+header li a:hover {
+  color: #1D1D1C;
+  font-style: italic;
+}
+
+
+  /* Style specifies clear and top margin properties for the main element */
+  main {
+    /*  clear: left;*/
+      overflow: auto;
+      /*border-radius: 2em 2em 2em 2em;*/
+  }
+
+  label {
+  	float: left;
+  	padding-right: 0.5em;
+  	text-align: right;
+  	width: 10em;
+  }
+
+  .contact {
+		background-color: transparent;
+		color: #1D1D1C;
+		padding: 0;
+		text-decoration: underline;
+	}
+  /* Style specifies to hide the mobile class */
+	.mobile {
+		display: none;
+	}
+
+	/* Style specifies to display the desktop class */
+	.desktop {
+		display: inline;
+	}
+
+  /* Style specifies to display the tablet class */
+	.tablet {
+		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
+	}
+
+  .btn {
+  	margin-left: 12em;
+  }
+
+}
+@media only screen and (min-width: 950px) {
+#container {
+  width: 90%;
+  margin: auto;
+}
+header img {
+  float: left;
+  /*max-width: 17%;*/
+  height: 18em;
+}
+
+header {
+  /*background:#909090;*/
+  /*background-color: #8db5dd;*/
+  text-align: left;
+  /*min-height: 20em;
+  margin-top: -1em;
+  margin-left: -5em;
+  margin-right: -5em;*/
+  clear: none;
+  /*border-radius: 0 0 2em 2em;
+  border-bottom: #4b0f60 3px solid;
+  border-right: #4b0f60 3px solid;
+  border-left: #4b0f60 3px solid;*/
+}
+header ul {
+  float: left;
+  min-width: 60%;
+  max-width: 65%;
+  margin-top: 9em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  clear: none;
+  position: relative;
+  right: -1.5em;
+}
+
+header ul li {
+  list-style-type: none;
+  background: transparent;
+  clear: none;
+}
+
+
+main{
+  clear: both;
+}
+
+
+
+/*nav {
+  margin: auto;
+}
+
+nav ul {
+  float: right;
+  width: 65%;
+  margin-top: 5em;
+  margin-right: 0.5em;
+  padding: 0;
+}
+*/
+}
